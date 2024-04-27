@@ -106,6 +106,8 @@ import { ClientLogin } from './src/screens/AuthScreen/ClientLogin';
 import { ClientSignup } from './src/screens/AuthScreen/ClientSignup';
 import { DriverLogin } from './src/screens/AuthScreen/DriverLogin';
 import { DriverSignup } from './src/screens/AuthScreen/DriverSignup';
+import { Bottom_navigation_driver } from './Bottom_navigation_driver';
+import { Bottom_navigation_client } from './Bottom_navigation_client';
 import { View, Text, StyleSheet } from 'react-native';
 
 const Stack = createStackNavigator();
@@ -164,6 +166,16 @@ const App = () => {
           name="DriverLogin"
           component={DriverLogin}
           options={{ headerTitle: 'Driver Login' }}
+        />
+        <Stack.Screen
+          name="Bottom_navigation_driver"
+          component={Bottom_navigation_driver}
+          options={{ headerTitle: 'Welcome Driver' ,headerShown:true }}
+        />
+        <Stack.Screen
+          name="Bottom_navigation_client"
+          component={Bottom_navigation_client}
+          options={{headerTitle: 'Welcome Client' , headerShown:true }}
         />
       </Stack.Navigator>
     </NavigationContainer>

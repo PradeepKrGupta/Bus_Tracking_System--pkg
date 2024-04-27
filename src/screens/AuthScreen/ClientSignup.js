@@ -41,7 +41,7 @@ export const ClientSignup = ({ navigation }) => {
         console.log(clientData);
 
         // Navigate back to Auth page after successful signup
-        navigation.goBack();
+        navigation.navigate('Bottom_navigation_client');
     };
 
     const handleReset = () => {
