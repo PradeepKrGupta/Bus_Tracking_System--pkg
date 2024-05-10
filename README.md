@@ -27,13 +27,15 @@ This project is a cross-platform mobile application built with React Native that
 - Start tracking and navigation of vehicles in real-time.
 
 ## Screenshots
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Home.jpeg"/></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Auth.jpeg"/></a>
-<img src=""/></a>
-<img src=""/></a>
-<img src=""/></a>
-<img src=""/></a>
-
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/architecture.jpeg" width="200px" ></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Home.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Auth.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driverlogin.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driversignup.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/userlogin.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/userssignup.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driverlocation.jpeg" width="200px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/clientmap.jpeg" width="200px"></a>
 <!-- Add more screenshots as needed -->
 
 ## Contributing
