@@ -27,7 +27,7 @@ This project is a cross-platform mobile application built with React Native that
 - Start tracking and navigation of vehicles in real-time.
 
 ## Screenshots
-![Architecture Diagram of Project] <img src="https://img.icons8.com/color/48/000000/microsoft-powerpoint-2019--v1.png"/>
+![Architecture Diagram of Project] <img src="https://drive.google.com/file/d/1ubZ59JFjHSi7ZNXTeP9Bwk_Kj5j6XcE6/view?usp=sharing"/>
 ![Screenshot 2](/screenshots/screenshot2.png)
 <!-- Add more screenshots as needed -->
 
