@@ -27,7 +27,7 @@ This project is a cross-platform mobile application built with React Native that
 - Start tracking and navigation of vehicles in real-time.
 
 ## Screenshots
-![Architecture Diagram of Project] <img src="https://drive.google.com/file/d/1ubZ59JFjHSi7ZNXTeP9Bwk_Kj5j6XcE6/view?usp=sharing"/>
+![Architecture Diagram of Project] <img src="https://github.com/PradeepKrGupta/Bus_Tracking_System--pkg/blob/master/assets/ClientLogin.jpeg"/>
 ![Screenshot 2](/screenshots/screenshot2.png)
 <!-- Add more screenshots as needed -->
 
