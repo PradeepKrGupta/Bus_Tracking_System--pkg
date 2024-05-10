@@ -1,4 +1,4 @@
-# Real-Time Bus Tracking System
+# AWS Cloud Based Real-Time Bus Tracking System
 
 ## Overview
 This project is a cross-platform mobile application built with React Native that enables real-time tracking and navigation of vehicles. It utilizes AWS services such as EC2, Amplify, and Cognito for the backend infrastructure.
@@ -30,14 +30,14 @@ This project is a cross-platform mobile application built with React Native that
 <img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/architecture.jpeg" width="300px" height="300px">
 
 ## Project Output
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Home.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Auth.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driverlogin.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driversignup.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/userlogin.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/userssignup.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driverlocation.jpeg" width="350px" height="600px"></a>
-<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/clientmap.jpeg" width="350px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Home.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/Auth.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driverlogin.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driversignup.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/userlogin.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/userssignup.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/driverlocation.jpeg" width="320px" height="600px"></a>
+<img src="https://github.com/PradeepKrGupta/ProjectOutputScreenShots/blob/master/clientmap.jpeg" width="320px" height="600px"></a>
 <!-- Add more screenshots as needed -->
 
 ## Contributing
