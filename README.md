@@ -49,7 +49,6 @@ This project is a cross-platform mobile application built with React Native that
 
 ## Author
 - Name: [Pradeep Kumar Gupta](https://pradeepkrgupta.vercel.app/)
-- ...
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
