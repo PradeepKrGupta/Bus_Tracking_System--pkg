@@ -11,7 +11,7 @@ import * as Location from 'expo-location';
 import MapViewDirections from 'react-native-maps-directions';
 import Modal from 'react-native-modal';
 
-const fakeLocations = {
+const DumyLocation = {
   "342-F (Kempegowda Bus Station → Sarjapura Bus Stand)": { 
     name: "342-F", 
     route: "Kempegowda Bus Station -> Sarjapura Bus Stand", 
@@ -195,7 +195,7 @@ export const ClientApp = () => {
   const onSearch = (searchText) => {
     setSearch(searchText);
     if (searchText.length > 0) {
-      const searchResults = Object.keys(fakeLocations).filter(l =>
+      const searchResults = Object.keys(DumyLocation).filter(l =>
         l.toLowerCase().includes(searchText.toLowerCase())
       );
       setSuggestions(searchResults);
@@ -205,7 +205,7 @@ export const ClientApp = () => {
   };
 
   const onMarkerPress = (locationName) => {
-    setSelectedLocation(fakeLocations[locationName]);
+    setSelectedLocation(DumyLocation[locationName]);
     markerRefs.current[locationName].showCallout();
     setPopupVisible(true);
     slideUp();
@@ -218,12 +218,12 @@ export const ClientApp = () => {
   };
 
   const onSelectSuggestion = (locationName) => {
-    setSelectedLocation(fakeLocations[locationName]);
+    setSelectedLocation(DumyLocation[locationName]);
     setSearch('');
     setSuggestions([]);
     mapRef.current.animateToRegion({
-      latitude: fakeLocations[locationName].latitude,
-      longitude: fakeLocations[locationName].longitude,
+      latitude: DumyLocation[locationName].latitude,
+      longitude: DumyLocation[locationName].longitude,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
     });
@@ -294,16 +294,16 @@ export const ClientApp = () => {
           </Marker>
         )}
 
-        {Object.keys(fakeLocations).map((key) => (
+        {Object.keys(DumyLocation).map((key) => (
           <Marker
             key={key}
             ref={ref => markerRefs.current[key] = ref}
             coordinate={{
-              latitude: fakeLocations[key].latitude,
-              longitude: fakeLocations[key].longitude,
+              latitude: DumyLocation[key].latitude,
+              longitude: DumyLocation[key].longitude,
             }}
-            title={fakeLocations[key].name}
-            description={fakeLocations[key].route}
+            title={DumyLocation[key].name}
+            description={DumyLocation[key].route}
             onPress={() => onMarkerPress(key)}
           >
             <Image
@@ -312,7 +312,7 @@ export const ClientApp = () => {
             />
             <Callout tooltip={true} style={styles.calloutBucket}>
               <View style={styles.calloutContainer}>
-                <Text style={styles.calloutTitle}>{fakeLocations[key].name}</Text>
+                <Text style={styles.calloutTitle}>{DumyLocation[key].name}</Text>
               </View>
             </Callout>
           </Marker>
