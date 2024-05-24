@@ -1,14 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import * as Location from 'expo-location';
-import {io}  from 'socket.io-client';
-import SocketIOClient from 'socket.io-client';
-import MapView, { Marker } from 'react-native-maps';
-import { Button, View } from 'react-native';
+// =====================Below is the Testing code 2 for different features(main code which is working 100% and this is the main don't delete it)=========
 
-export const DriverApp = ({ driverId=0 }) => {
+
+
+import React, { useEffect, useState } from 'react';
+import { View, Switch, Image} from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
+import { io } from 'socket.io-client';
+import * as Location from 'expo-location';
+
+export const DriverApp = () => {
   const [location, setLocation] = useState(null);
-  const socket = io('http://75.101.216.81:3000');
-  
+  const [satelliteEnabled, setSatelliteEnabled] = useState(false);
+  const socket = io('http://54.91.83.65:3000');
+
+  const driverId = Math.floor(Math.random() * 10);
+
   useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
@@ -40,31 +46,46 @@ export const DriverApp = ({ driverId=0 }) => {
     })();
   }, []);
 
+  const toggleSatellite = () => {
+    setSatelliteEnabled(!satelliteEnabled);
+  };
 
   return (
-    <View style={{ flex: 1, margin:20,
-      justifyContent: 'flex-end',}}>
-    <MapView
-      style={{ flex: 1 }}
-      region={{
-        latitude: location ? location.latitude : 0,
-        longitude: location ? location.longitude : 0,
-        latitudeDelta: 0.0922,
-        longitudeDelta: 0.0421,
-      }}
-    >
-      {location && (
-        <Marker
-          coordinate={{ latitude: location.latitude, longitude: location.longitude }}
-          title="Driver Location"
+    <View style={{ flex: 1 }}>
+      <MapView
+        style={{ flex: 1 }}
+        initialRegion={{
+          latitude: location ? location.latitude : 0,
+          longitude: location ? location.longitude : 0,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+        mapType={satelliteEnabled ? 'satellite' : 'standard'}
+      >
+        {location && (
+          <Marker
+            coordinate={{ latitude: location.latitude, longitude: location.longitude }}
+            title="My Location"
+          >
+          <Image
+              source={require('../../../assets/driver_icon.png')}
+              style={{ width: 30, height: 30 }}
+              resizeMode="contain"
+            />
+          </Marker>
+        )}
+      </MapView>
+      <View style={{ position: 'absolute', top: 20, right: 20 }}>
+        <Switch
+          value={satelliteEnabled}
+          onValueChange={toggleSatellite}
         />
-      )}
-    </MapView>
-    <View style={{  marginBottom: 20, }}>
-    {/* <Button title="Send Data" onPress={sendDataToServer} /> */}
-  </View>
-  </View>
+      </View>
+    </View>
   );
 };
 
-// export default DriverApp;
+
+
+
+

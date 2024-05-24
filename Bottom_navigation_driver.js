@@ -1,11 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-// import { Auth } from './src/screens/AuthScreen/Auth';
-// import { ClientApp } from './src/screens/MapScreen/ClientApp';
 import { DriverApp } from './src/screens/MapScreen/DriverApp';
 import { Profile } from './src/screens/ProfileScreen/Profile';
-import { Book } from './src/screens/BookingScreen/Book';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,11 +12,6 @@ export const Bottom_navigation_driver = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-          // if (route.name === 'Auth') {
-          //   iconName = focused ? 'login' : 'login-variant';}
-          // } else if (route.name === 'Book') {
-          //   iconName = focused ? 'ticket-confirmation' : 'ticket-outline';
-          // }
           if (route.name === 'DriverApp') {
             iconName = focused ? 'map-marker-radius' : 'map-marker';
           }
